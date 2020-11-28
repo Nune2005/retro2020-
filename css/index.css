@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat;
+    
+    background: url(../img/1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.header {
+    background: black;
+    height: 80px;
+    width: 100%;
+    
+}
+ 
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+.header ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.header ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.header ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    background: #363535e0;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+
+
+/* squere */
+
+.klor{
+    width: 250px;
+    height: 250px;
+    background-color: grey;
+    border-radius: 120px;
+    margin-left: 40%;
+    margin-top: 2%
+}
+
+.klor .nkar{
+    width: 75%;
+    margin-left: 10%;
+
+}
+
+/* squere */
+
+/* anun */
+
+
+.anuny{
+    color: grey;
+    width: 15%;
+    height: 40px;
+    margin-left: 44%;
+    font-weight: bold;
+    font-size: 20px;
+}
+.anuny p{
+    float: left;
+    margin-top: 6%;
+   
+}
+
+/* anun */
+
+
+
+/* footer  */
+
+
+
+
+
+/* footer */
+
+
+@media (max-width: 952px) {
+   body{
+      background: url(../img/1.png);
+     background-repeat: no-repeat;
+   }
+ 
+ 
+   .klor{
+       margin-left:35%;
+   }
+
+   
+    label.logo {
+        font-size: 20px;
+        padding-left: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .header ul li a {
+        font-size: 16px;
+    }
+    .anuny{
+        width: 60%;
+        margin-left: 40%;
+    }
+}
+
+@media (max-width: 858px) {
+    label.logo {
+        font-size: 25px;
+    }
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .header ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .header ul li a {
+        font-size: 20px;
+        
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #363535e0;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+    .anuny{
+        width: 70%;
+        margin-left: 40%;
+    }
+}
+
+
+
+@media screen and (max-width: 540px){
+    .klor{
+        margin-left: 27%;
+    }
+
+    .anuny{
+        width: 65%;
+        margin-left: 35%;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 414px){
+    label.logo {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .klor{
+        margin-left: 20%;
+    }
+
+    .anuny{
+        width: 70%;
+        margin-left: 30%;
+    }
+   
+}
+
+
+
+
+@media screen and (max-width: 375px){
+    label.logo {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .klor{
+        margin-left: 17%;
+    }
+    .anuny{
+        width: 70%;
+        margin-left: 30%;
+    }
+   
+}
+
+@media screen and (max-width: 360px){
+    label.logo {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .anuny{
+        width: 65%;
+        margin-left: 30%;
+    }
+   
+}
+
+@media screen and (max-width: 320px){
+    label.logo {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .checkbtn{
+        width:5px;
+        margin-left: -20px;
+    }
+    .klor{
+        margin-left: 12%;
+    }
+    .anuny{
+        width: 80%;
+        margin-left: 25%;
+    }
+
+    
+}
+
+@media screen and (max-width: 280px){
+    label.logo{
+        font-size: 12px;
+        margin-left:-15px;
+    }
+    .klor{
+        margin-left: 15px;
+    }
+    .anuny{
+        width: 70%;
+        margin-left: 25%;
+    }
+}
